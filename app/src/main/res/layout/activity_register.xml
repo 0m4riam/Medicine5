@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.example.admin.medicine.Register">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_marginTop="24dp"
+        android:id="@+id/editText4"
+        android:hint="@string/password"
+        android:background="#e5f8ff"
+        android:padding="8dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/editText2"
+        android:hint="@string/phone_number"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:background="@color/edit_blue"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_height="60dp"
+        android:id="@+id/textView"
+        android:background="@color/cpb_grey"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="100dp"
+        android:id="@+id/editText"
+        android:hint="@string/name"
+        android:background="@color/edit_blue"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText3"
+        android:hint="@string/username"
+        android:background="@color/edit_blue"
+        android:padding="8dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_the_letters"
+        android:ems="10"
+        android:background="#e5f8ff"
+        android:id="@+id/editText5"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/title_activity_register"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/button"
+        android:background="@drawable/button_bg"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editText5"/>
+</RelativeLayout>

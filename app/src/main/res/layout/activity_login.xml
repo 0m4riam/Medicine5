@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="5"
+        tools:context="com.example.admin.medicine.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"></LinearLayout>
+
+    <ImageView
+        app:srcCompat="@drawable/logoo"
+        android:id="@+id/imageView2"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_or_password"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textSize="20dp"
+            android:background="@color/edit_blue"
+            android:drawableStart="@drawable/user22"
+            android:id="@+id/username"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:padding="8dp"
+            android:background="@color/edit_blue"
+            android:gravity="center_vertical"
+            android:id="@+id/password"
+            android:drawableStart="@android:drawable/ic_secure"
+            android:layout_below="@+id/username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="19dp" />
+        <Button
+            android:text="@string/login"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+
+            android:layout_width="match_parent"
+            android:background="@drawable/button_bg"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:padding="16dp"
+            android:layout_below="@+id/password"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="@string/title_activity_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/logo_blue"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            app:srcCompat="@drawable/bg"
+            android:id="@+id/imageView3"
+            android:layout_height="130dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+
+</LinearLayout>

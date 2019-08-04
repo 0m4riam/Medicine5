@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_accept"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.medicine.OrderAccept"
+    android:background="@drawable/bg2">
+
+
+    <TextView
+        android:text="المنتجات متوفرة الان بالصيدليه"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="@color/dark_Blue"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:text="اسم الصيدلية:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:text="رقم الهاتف:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textView8"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="عنوان الصيدلية:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/textView9"
+        android:layout_marginTop="72dp"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="مواعيد العمل"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textView10"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:layout_alignLeft="@+id/p_phone"
+        android:layout_alignStart="@+id/p_phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_name"
+        android:textColor="@color/logo_lemon"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9"
+        android:text="اختبار"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_phone"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_location"
+        android:textStyle="bold"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignRight="@+id/p_name"
+        android:layout_alignEnd="@+id/p_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_time"
+        android:textColor="@color/dark_Blue"
+        android:textSize="22dp"
+        android:gravity="right"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9" />
+
+    <Button
+        android:text="متابعه"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:textSize="23dp"
+        android:background="@drawable/success"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="الغاء الطلب"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button12"
+        android:textSize="23dp"
+        android:background="@drawable/fail"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

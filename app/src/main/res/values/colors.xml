@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="logo_blue">#3990CD</color>
+    <color name="logo_lemon">#A8D92A</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="dark_Blue">#1B4C97</color>
+    <color name="edit_blue">#e5f8ff</color>
+    <color name="cpb_grey">#aaaaaa</color>
+    <color name="cpb_white">#FFFFFF</color>
+</resources>

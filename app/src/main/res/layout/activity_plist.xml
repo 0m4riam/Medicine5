@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.admin.medicine.PList"
+    android:background="@drawable/bg2"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="12"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:background="@drawable/white_rounded"
+            android:layout_alignBottom="@+id/search2"
+            android:layout_alignTop="@+id/search2"
+            android:layout_alignLeft="@+id/button9"
+            android:layout_alignStart="@+id/button9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/plistview"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox2"
+            android:visibility="gone"/>
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تحديد الكل"
+            android:textSize="23dp"
+            android:textColor="@color/dark_Blue"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:gravity="center"
+                android:layout_weight="6"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="@string/location_not_detrmined"
+                    android:drawableStart="@android:drawable/ic_delete"
+                    android:id="@+id/location_message"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_location"
+                    android:visibility="invisible"
+                    android:id="@+id/show_location"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="5"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:text="@string/choose_from_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rounded"
+                        android:layout_weight="2"
+                        android:id="@+id/location_map"
+                        android:textAllCaps="false"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:text="@string/use_current_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rounded"
+                        android:layout_weight="2"
+                        android:textAllCaps="false"
+                        android:id="@+id/location_current"/>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/search_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView38"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginRight="15dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_range"
+                android:layout_gravity="center"
+                ></Spinner>
+
+            <Button
+                android:text="@string/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search2"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button9"
+                android:layout_toStartOf="@+id/button9"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:id="@+id/no_of_pharmacies_layout"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textColor="#000000"
+                android:text="@string/No_of_pharmacies"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#008800"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:id="@+id/num_of_pharmacies"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/proceed"
+            android:textSize="25dp"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>
